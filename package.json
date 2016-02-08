@@ -11,7 +11,9 @@
     "babel-preset-react": "^6.3.13",
     "gulp": "^3.9.0",
     "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,9 +21,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-  	"react": "^0.14.3",
-  	"react-dom": "^0.14.3"
-  }
+  "license": "ISC"
 }
