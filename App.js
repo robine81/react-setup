@@ -1,10 +1,21 @@
-//first REACT component
+//REACT components
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import React from	'react';
 class App extends React.Component {
+
 	render(){
-		return <div>Hello world</div>
+		return <Button>I React</Button>
 	}
 }
 
+class Button extends React.Component {
+	render(){
+		return <button>{this.props.children}</button>
+	}
+}
+
+
 export default App
+
+const Heart = () => <span className=”glyphicon glyphicon-heart”> </span>
