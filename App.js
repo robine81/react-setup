@@ -3,19 +3,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
-
+	constructor(){
+		super();
+		this.state = {val: 0};
+		this.update = this.update.bind(this);
+	}
+	update(){
+		console.log('update')
+		this.setState({val: this.state.val+1})
+	}
+	compontentWillMount(){
+		console.log('mounting')
+	}
 	render(){
-		return <Button>I React</Button>
+		console.log('rendering!')
+		return <button onClick={this.update}>{this.state.val}</button>
+	}
+	compontentDidlMount(){
+		console.log('rendered')
+	}
+	compontentUnMount(){
+		console.log('bye!')
 	}
 }
-
-class Button extends React.Component {
-	render(){
-		return <button>{this.props.children}</button>
-	}
-}
-
 
 export default App
-
-const Heart = () => <span className=”glyphicon glyphicon-heart”> </span>
